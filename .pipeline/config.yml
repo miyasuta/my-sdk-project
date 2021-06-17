@@ -32,3 +32,4 @@ steps:
       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
       org: 'b736177ctrial'
       space: 'dev'
+      manifest: 'manifest.yml'
