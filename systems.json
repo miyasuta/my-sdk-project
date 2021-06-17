@@ -1,0 +1,6 @@
+{
+  "systems": [{
+    "alias": "MockServer",
+    "uri": "http://localhost:3000"
+  }]
+}

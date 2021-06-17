@@ -1,0 +1,112 @@
+{
+
+    "mockBPForGet": "1003765",
+    "mockBPForCreateAddress": "1003764",
+
+    "mockBusinessPartner": {
+        "businessPartner": "1003765",
+        "creationDate": "2018-02-12T00:00:00.000Z",
+        "firstName": "Jane",
+        "isFemale": true,
+        "isMale": false,
+        "lastName": "Roe",
+        "toBusinessPartnerAddress": [
+            {
+                "businessPartner": "1003765",
+                "addressId": "28241",
+                "cityName": "Palo Alto",
+                "country": "US",
+                "houseNumber": "3410",
+                "postalCode": "CA 94304",
+                "streetName": "Hillview Avenue"
+            }
+        ]
+    },
+
+    "mockBusinessPartners": [
+        {
+            "businessPartner": "1003764",
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "businessPartner": "1003765",
+            "firstName": "Jane",
+            "lastName": "Roe"
+        },
+        {
+            "businessPartner": "1003766",
+            "firstName": "John",
+            "lastName": "Smith"
+        },
+        {
+            "businessPartner": "1003767",
+            "firstName": "Carla",
+            "lastName": "Coe"
+        }
+    ],
+
+    "mockAddressInput": {
+        "country": "DE",
+        "postalCode": "14469",
+        "cityName": "Potsdam",
+        "streetName": "Konrad-Zuse-Ring",
+        "houseNumber": "10"
+    },
+
+    "mockAddressUpdate": {
+        "cityName": "Berlin",
+        "businessPartner": "1003764",
+        "addressId": "28238"
+    },
+
+    "mockAddressResult": {
+        "businessPartner": "1003764",
+        "addressId": "28248",
+        "validityStartDate": "2018-02-12T00:00:00.000Z",
+        "validityEndDate": "9999-12-31T23:59:59.000Z",
+        "authorizationGroup": "",
+        "addressUuid": "31e52500-cda9-11eb-a9ed-85efc482a308",
+        "additionalStreetPrefixName": "",
+        "additionalStreetSuffixName": "",
+        "addressTimeZone": "CET",
+        "careOfName": "",
+        "cityCode": "",
+        "cityName": "Potsdam",
+        "companyPostalCode": "",
+        "country": "DE",
+        "county": "",
+        "deliveryServiceNumber": "",
+        "deliveryServiceTypeCode": "",
+        "district": "",
+        "formOfAddress": "",
+        "fullName": "",
+        "homeCityName": "",
+        "houseNumber": "10",
+        "houseNumberSupplementText": "",
+        "language": "",
+        "poBox": "",
+        "poBoxDeviatingCityName": "",
+        "poBoxDeviatingCountry": "",
+        "poBoxDeviatingRegion": "",
+        "poBoxIsWithoutNumber": false,
+        "poBoxLobbyName": "",
+        "poBoxPostalCode": "",
+        "person": "28237",
+        "postalCode": "14469",
+        "prfrdCommMediumType": "",
+        "region": "",
+        "streetName": "Konrad-Zuse-Ring",
+        "streetPrefixName": "",
+        "streetSuffixName": "",
+        "taxJurisdiction": "",
+        "transportZone": "",
+        "addressIdByExternalSystem": "",
+        "toAddressUsage": [],
+        "toEmailAddress": [],
+        "toFaxNumber": [],
+        "toMobilePhoneNumber": [],
+        "toPhoneNumber": [],
+        "toUrlAddress": []
+    }
+}

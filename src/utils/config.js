@@ -1,0 +1,3 @@
+module.expots = {
+    destinationName : 'MockServer'
+}
