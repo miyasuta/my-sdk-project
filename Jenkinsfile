@@ -26,7 +26,7 @@ node(){
 
   stage('Build')   {
     //   mtaBuild script:this
-    buildExecute script:this, npmRunScripts:['npm run build', 'ap-cloud-sdk package']
+    buildExecute script:this, npmRunScripts:['ci-build', 'ci-package']
   }
 
   stage('Deploy')   {
