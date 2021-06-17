@@ -26,7 +26,7 @@ node(){
 
   stage('Build')   {
     //   mtaBuild script:this
-    buildExecute script:this, buildTool:'npm', npmRunScripts:'npm run build && sap-cloud-sdk package'
+    buildExecute script:this, buildTool:'npm', npmRunScripts:['npm run build', 'ap-cloud-sdk package']
   }
 
   stage('Deploy')   {
