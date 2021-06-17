@@ -21,11 +21,10 @@
 general:
   productiveBranch: 'master'
   projectName: 'my-sdk-project'
+  inferBuildTool: true
 
 ### Step-specific configuration
 steps:
-  mtaBuild:
-    buildTarget: 'CF'
   cloudFoundryDeploy:
     cloudFoundry:
       credentialsId: 'CF_CREDENTIALS'

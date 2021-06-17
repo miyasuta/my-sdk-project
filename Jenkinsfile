@@ -26,10 +26,10 @@ node(){
 
   stage('Build')   {
     //   mtaBuild script:this
-    buildExecute script:this, buildTool:'npm', npmRunScripts:['npm run build', 'ap-cloud-sdk package']
+    buildExecute script:this, npmRunScripts:['npm run build', 'ap-cloud-sdk package']
   }
 
   stage('Deploy')   {
-      cloudFoundryDeploy script:this
+      cloudFoundryDeploy script:this, deployTool: 'cf_native'
   }
 }
