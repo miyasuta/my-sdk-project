@@ -28,7 +28,7 @@ steps:
     buildTarget: 'CF'
   cloudFoundryDeploy:
     cloudFoundry:
-      credentialsId: 'MY_CF_CREDENTIALS'
+      credentialsId: 'CF_CREDENTIALS'
       apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
       org: 'b736177ctrial'
       space: 'dev'

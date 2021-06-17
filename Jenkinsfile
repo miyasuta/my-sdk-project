@@ -25,10 +25,11 @@ node(){
   }
 
   stage('Build')   {
-      mtaBuild script:this
+    //   mtaBuild script:this
+    buildExecute script:this, buildTool:'npm', npmRunScripts:'npm run build && sap-cloud-sdk package'
   }
 
   stage('Deploy')   {
-      cloudFoundryDeploy script:this, deployTool:'mtaDeployPlugin'
+      cloudFoundryDeploy script:this
   }
 }
