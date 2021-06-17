@@ -22,7 +22,6 @@ general:
   productiveBranch: 'master'
   projectName: 'my-sdk-project'
   inferBuildTool: true
-  verbose: true
 
 ### Step-specific configuration
 steps:

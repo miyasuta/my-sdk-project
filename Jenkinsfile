@@ -29,6 +29,10 @@ node(){
     buildExecute script:this, npmRunScripts:['ci-build', 'ci-package']
   }
 
+  stage('Integraton') {
+    npmExecuteEndToEndTests script:this, runScript:'ci-integration-test'
+  }
+
   stage('Deploy')   {
       cloudFoundryDeploy script:this, deployTool: 'cf_native'
   }
