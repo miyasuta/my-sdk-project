@@ -30,7 +30,7 @@ node(){
   }
 
   stage('Integraton') {
-    npmExecuteEndToEndTests script:this, runScript:'ci-integration-test'
+    npmExecuteScripts script:this, scripts:['ci-integration-test']
   }
 
   stage('Deploy')   {

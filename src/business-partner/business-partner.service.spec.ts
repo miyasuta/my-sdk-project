@@ -4,10 +4,10 @@ import { mockTestDestination } from '@sap-cloud-sdk/test-util';
 import { 
   mockBPForGet,
   mockBPForCreateAddress,
-  mockBusinessPartner, 
-  mockBusinessPartners, 
+  mockBusinessPartner,
+  mockBusinessPartners,
   mockAddressInput,
-  mockAddressUpdate } from '../../test/mockdata/business-partner.json';
+  mockAddressUpdate } from '../../test/mock/business-partner.json';
 
 describe('BusinessPartnerService', () => {
   let service: BusinessPartnerService;

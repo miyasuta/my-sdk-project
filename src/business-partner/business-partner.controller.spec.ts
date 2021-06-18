@@ -1,14 +1,15 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { BusinessPartnerController } from './business-partner.controller';
 import { BusinessPartnerService } from './business-partner.service';
-import { 
-  mockBusinessPartner, 
+import {
+  mockBusinessPartner,
   mockBusinessPartners,
   mockBPForCreateAddress,
-  mockAddressInput, 
+  mockAddressInput,
   mockAddressResult,
-  mockAddressUpdate } from '../../test/mockdata/business-partner.json';
-  import * as mockBusinessPartnerService from '../../test/mockdata/mockBusinessPartnerService';  
+  mockAddressUpdate
+} from '../../test/mock/business-partner.json';
+import * as mockBusinessPartnerService from '../../test/mock/mockBusinessPartnerService';  
 
 describe('BusinessPartnerController', () => {
   let controller: BusinessPartnerController;
@@ -56,6 +57,6 @@ describe('BusinessPartnerController', () => {
   it('controller: should delete given address', async () => {
     await expect(controller.deleteBusinessPartnerAddress(mockAddressUpdate.businessPartner, mockAddressUpdate.addressId)).resolves.toBe(1)
     //expect(mockBusinessPartnerService.deleteBusinessPartnerAddress).toHaveBeenCalled();
-  })    
-
+  })
+  
 });
