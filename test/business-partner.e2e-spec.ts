@@ -60,7 +60,7 @@ describe('BusinessPartnerController (e2e)', () => {
   it('/business-partners/:businessPartnerId/address/:addressId (DELETE)', () => {
     return request(app.getHttpServer())
       .delete(`/business-partners/${mockAddressUpdate.businessPartner}/address/${mockAddressUpdate.addressId}`)
-      //.expect(204)
-      .expect(200)
+      .expect(204)
+      //.expect(200)
   });    
 });

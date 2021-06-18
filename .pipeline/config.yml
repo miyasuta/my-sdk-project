@@ -22,7 +22,7 @@ general:
   productiveBranch: 'master'
   projectName: 'my-sdk-project'
   inferBuildTool: true
-  junit: [pattern: '**/backend-integration/*.xml', updateResults: true, archive: true]
+  junit: [pattern: '/s4hana_pipeline/**/*.xml', updateResults: true, archive: true]
 
 ### Step-specific configuration
 steps:
