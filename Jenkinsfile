@@ -30,10 +30,10 @@ node(){
 
   stage('Integraton') {
     npmExecuteScripts script:this, runScripts:['ci-integration-test']
-  } 
+    testsPublishResults script: this
+  }
 
   stage('Deploy')   {
       cloudFoundryDeploy script:this, deployTool: 'cf_native'
-  }   
-
+  }
 }
