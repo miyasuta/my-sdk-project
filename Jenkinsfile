@@ -25,12 +25,12 @@ node(){
   }
 
   stage('Build')   {
-    //   mtaBuild script:this
     buildExecute script:this, npmRunScripts:['ci-build', 'ci-package']
   }
 
   stage('Integraton') {
     npmExecuteScripts script:this, runScripts:['ci-integration-test']
+    testsPublishResults script: this, junit: [updateResults: true, archive: true]
   }
 
   stage('Deploy')   {
