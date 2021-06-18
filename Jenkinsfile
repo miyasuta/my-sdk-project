@@ -30,10 +30,16 @@ node(){
 
   stage('Integraton') {
     npmExecuteScripts script:this, runScripts:['ci-integration-test']
-    testsPublishResults script: this, junit: [pattern: '**/backend-integration/*.xml', updateResults: true, archive: true]
-  }
+  } 
 
   stage('Deploy')   {
       cloudFoundryDeploy script:this, deployTool: 'cf_native'
   }
+
+  post {
+    always {
+      testsPublishResults script: this, junit: [pattern: '**/backend-integration/*.xml', updateResults: true, archive: true]
+    }
+  }   
+
 }
