@@ -30,7 +30,7 @@ node(){
 
   stage('Integration') {
     npmExecuteScripts script:this, runScripts:['ci-integration-test']
-    testsPublishResults script: this, [pattern: '/s4hana_pipeline/**/*.xml', updateResults: true, archive: true]
+    testsPublishResults script: this, [pattern: '**/backend-integration/*.xml', updateResults: true, archive: true]
   }
 
   stage('Deploy')   {
