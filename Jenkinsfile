@@ -28,7 +28,7 @@ node(){
     buildExecute script:this, npmRunScripts:['ci-build', 'ci-package']
   }
 
-  stage('Integraton') {
+  stage('Integration') {
     npmExecuteScripts script:this, runScripts:['ci-integration-test']
     testsPublishResults script: this
   }
